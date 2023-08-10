@@ -10,6 +10,7 @@
             margin: 0px;
             font-family: immortal;
             overflow-x: hidden;
+            user-select: none;
         }
         .title {
             position:absolute;
@@ -20,21 +21,36 @@
         }
         .content {
             position: absolute;
-            margin: 10vh;
+            margin: 7.5vw;
             margin-top: 30vh;
             z-index: 2;
             font-size:24px;
             padding: 1vw;
         }
+        #about {
+
+        }
+        .content-text {
+            position: relative;
+            margin: 1vw;
+            font-size:1.75vw;
+            text-align:center;
+            width: 80vw;
+            
+        }
         .footer {
             color: #4d4c4d;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 50%;
+            position: relative;
+            bottom: 0px;
+            left: -5vw;
+            margin: 0;
+            width: 100vw;
+            height: auto;
             text-decoration: none;
             font-weight: bold;
-            overflow: hidden;
+            font-size: 3vw;
+            overflow: scroll;
         }
         .border {
             z-index:1;
@@ -43,7 +59,7 @@
         .nav-bar {
           position: absolute;
           width: 50vw;
-          z-index: 4;
+          /*z-index: 4;*/
           margin-top: 25.5vh;
           margin-left: 25vw;
           margin-right: 25vw;  
@@ -58,6 +74,13 @@
           gap: 5vw;
           display: flex;
           flex-direction: row;
+          z-index: 0;
+          margin:0;
+        }
+        
+        .menu {
+            z-index: 2;
+            width:1vw;
         }
 
         .nav {
@@ -113,12 +136,33 @@
             text-align: center;
         }
         .important-notes {
-            border: solid thick black;
+            border: solid thick #cb9977;
+            border-radius: 0.5vw;
             background-color: #cbb577;
             /* position: absolute;
             top: 100vh;
             left: 2vw;*/
             width: 80vw;
+        }
+        .board-list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 5vw;
+            padding: 0;
+        }
+        .mailing-list {
+            border-width: medium;
+            border-style: solid;
+            border-radius: 5vw;
+            border-color:#cb9977;
+            padding: 2vw;
+            text-align: center;
+        }
+        .upcoming {
+            border-width: medium;
+            border-style: solid;
+            border-color:#cb9977;
         }
         .stuff {
             margin: 0;
