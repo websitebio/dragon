@@ -1,6 +1,6 @@
         @font-face {
             font-family: immortal;
-            src: url(immortal.ttf);
+            src: url(IMMORTAL.ttf);
         }
         body {
             background-image:url('border.png'), url('border.png');
