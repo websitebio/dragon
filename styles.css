@@ -1,0 +1,131 @@
+        @font-face {
+            font-family: immortal;
+            src: url(immortal.ttf);
+        }
+        body {
+            background-image:url('border.png'), url('border.png');
+            background-position: left top, right top;
+            background-size: 2vw auto, 2vw auto;
+            background-repeat:repeat-y, repeat-y;
+            margin: 0px;
+            font-family: immortal;
+            overflow-x: hidden;
+        }
+        .title {
+            position:absolute;
+            top:0vh;
+            left:2vw;
+            width: 96vw;
+            height: 25.5vh;
+        }
+        .content {
+            position: absolute;
+            margin: 10vh;
+            margin-top: 30vh;
+            z-index: 2;
+            font-size:24px;
+            padding: 1vw;
+        }
+        .footer {
+            color: #4d4c4d;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            text-decoration: none;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .border {
+            z-index:1;
+            overflow: hidden;
+        }
+        .nav-bar {
+          position: absolute;
+          width: 50vw;
+          z-index: 4;
+          margin-top: 25.5vh;
+          margin-left: 25vw;
+          margin-right: 25vw;  
+        }
+
+        .nav-bar-list {
+          list-style: none;
+          border-color: #9f853d;
+          border-width: 1vw;
+          border-style: double;
+          background-color: #cbb577;
+          gap: 5vw;
+          display: flex;
+          flex-direction: row;
+        }
+
+        .nav {
+          font-family: Product Sans;
+          text-decoration: none;
+          font-size: min(2vw, 15rem);
+          color: #B29544;
+          font-weight: bold;
+          cursor: pointer; 
+          border-color: #9f853d;
+          border-width: thick;
+        } 
+        .nav:hover {
+            color: #2980b9;
+        }
+        .archive {
+            border-width: thick;
+            border-color: #9f853d;
+            border-style: solid;
+            padding: 3vw;
+            width: 70vw;
+        }
+        .yearly {
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+            
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 10vw;
+            height: min(auto, 10vh);
+            cursor: pointer; 
+            border-radius:0.5vw;
+            margin-top: 2vh;
+            border-style:solid;
+            border-width:thin;
+            border-color:#cb9977;
+        }
+        .card:hover {
+            background-color: #2980b9;
+        }
+        .card-img {
+            width: 10vw;
+            height: min(auto, 10vh);
+            border-radius:0.5vw;
+        }
+        .card-text {
+            margin: 0px;
+            width: 10vw;
+            height: auto;
+            text-align: center;
+        }
+        .important-notes {
+            border: solid thick black;
+            background-color: #cbb577;
+            /* position: absolute;
+            top: 100vh;
+            left: 2vw;*/
+            width: 80vw;
+        }
+        .stuff {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10vw;
+            list-style: none;
+        }
