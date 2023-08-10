@@ -2,11 +2,12 @@
             font-family: immortal;
             src: url(IMMORTAL.ttf);
         }
-        body {
+        .body {
             background-image:url('Border.png'), url('Border.png');
             background-position: left top, right top;
             background-size: 2vw auto, 2vw auto;
             background-repeat:repeat-y, repeat-y;
+            /*transform: none, scaleX(-1);*/
             margin: 0px;
             font-family: immortal;
             overflow-x: hidden;
@@ -21,7 +22,7 @@
         }
         .content {
             position: absolute;
-            margin: 7.5vw;
+            margin: 8.5vw;
             margin-top: 30vh;
             z-index: 2;
             font-size:24px;
@@ -46,14 +47,14 @@
             text-align: left;
             position: relative;
             bottom: 0px;
-            left: 25vw;
+            left: 17.5vw;
             margin: 0;
             width: 50vw;
             height: auto;
             text-decoration: none;
             font-weight: bold;
             font-size: 3vw;
-            overflow: scroll;
+            overflow: visible;
         }
         .border {
             z-index:1;
@@ -126,6 +127,9 @@
         }
         .card:hover {
             background-color: #2980b9;
+            box-shadow: 0 0 0 30px rgba(0, 230, 150, 0.2);
+            transition: all 200ms ease-out;
+            z-index: 5;
         }
         .card-img {
             width: 10vw;
@@ -137,6 +141,8 @@
             width: 10vw;
             height: auto;
             text-align: center;
+            font-size: 1.5vw;
+            overflow:hidden;
         }
         .important-notes {
             border: solid thick #cb9977;
@@ -154,14 +160,14 @@
             gap: 5vw;
             padding: 0;
         }
-        .mailing-list {
+        /*.mailing-list {
             border-width: medium;
             border-style: solid;
             border-radius: 5vw;
             border-color:#cb9977;
             padding: 2vw;
             text-align: center;
-        }
+        }*/
         .upcoming {
             border-width: medium;
             border-style: solid;
@@ -173,6 +179,6 @@
             border: 0;
             display: flex;
             flex-direction: column;
-            gap: 10vw;
+            gap: 3vw;
             list-style: none;
         }
