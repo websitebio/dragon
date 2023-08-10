@@ -3,7 +3,7 @@
             src: url(IMMORTAL.ttf);
         }
         body {
-            background-image:url('border.png'), url('border.png');
+            background-image:url('Border.png'), url('Border.png');
             background-position: left top, right top;
             background-size: 2vw auto, 2vw auto;
             background-repeat:repeat-y, repeat-y;
